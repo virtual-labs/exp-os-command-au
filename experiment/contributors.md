@@ -8,4 +8,4 @@ EMPTY
 ### Developers
 | SNo. | Name | Email | Institute | ID |
 | :---: | :---: | :---: | :---: | :---: |
-| 1 | name | email | institute | id |
+| 1 | Anandi | anandik@am.amrita.edu | Amrita Vishwa Vidyapeetham | 12230912|
