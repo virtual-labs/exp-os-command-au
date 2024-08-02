@@ -2,37 +2,54 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is a common consequence of OS command injection?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Improved system performance",
+        "b": "Unauthorized data access",
+        "c": "Faster command execution",
+        "d": "Automatic system updates"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. OS command injection does not improve performance.",
+        "b": "Correct! OS command injection can lead to unauthorized data access.",
+        "c": "Incorrect. The focus is on unauthorized command execution, not speed.",
+        "d": "Incorrect. OS command injection is unrelated to system updates."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which character is often used to chain commands in OS command injection?",
+      "answers": {
+        "a": "&",
+        "b": "%",
+        "c": "#",
+        "d": "$"
+      },
+      "explanations": {
+        "a": "Correct! The '&' character is commonly used to chain commands.",
+        "b": "Incorrect. The '%' character is not used for chaining commands.",
+        "c": "Incorrect. The '#' character is used for comments, not chaining commands.",
+        "d": "Incorrect. The '$' character is used for variable expansion, not chaining commands."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "How can input validation help prevent OS command injection?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "By allowing all characters",
+        "b": "By blocking special characters",
+        "c": "By executing commands faster",
+        "d": "By improving user experience"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Allowing all characters can lead to vulnerabilities.",
+        "b": "Correct! Blocking special characters can help prevent command injection.",
+        "c": "Incorrect. Input validation is not related to command execution speed.",
+        "d": "Incorrect. Input validation focuses on security, not user experience."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
