@@ -1,0 +1,57 @@
+{
+  "version": 2.0,
+  "questions": [
+   
+    {
+      "question": "What is OS command injection?",
+      "answers": {
+        "a": "A way to speed up command execution",
+        "b": "A vulnerability allowing execution of arbitrary commands",
+        "c": "A method for improving system performance",
+        "d": "A technique for optimizing queries"
+      },
+      "explanations": {
+        "a": "Incorrect. OS command injection is a security vulnerability.",
+        "b": "Correct! OS command injection allows attackers to execute arbitrary commands.",
+        "c": "Incorrect. OS command injection is unrelated to system performance.",
+        "d": "Incorrect. OS command injection is not about optimizing queries."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following can help mitigate OS command injection?",
+      "answers": {
+        "a": "Running commands with root privileges",
+        "b": "Using parameterized commands",
+        "c": "Avoiding input validation",
+        "d": "Directly incorporating user input in commands"
+      },
+      "explanations": {
+        "a": "Incorrect. Running commands with root privileges can exacerbate the problem.",
+        "b": "Correct! Using parameterized commands helps separate data from command logic.",
+        "c": "Incorrect. Input validation is crucial to mitigate injection vulnerabilities.",
+        "d": "Incorrect. Directly incorporating user input in commands can lead to injection vulnerabilities."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the following user input indicate: 'file.txt && cat /etc/passwd'?",
+      "answers": {
+        "a": "An attempt to view a file and list its contents",
+        "b": "An attempt to execute multiple commands",
+        "c": "A benign file reading operation",
+        "d": "A syntax error in the command"
+      },
+      "explanations": {
+        "a": "Incorrect. This input attempts to list contents and read a sensitive file.",
+        "b": "Correct! This input is attempting to execute multiple commands.",
+        "c": "Incorrect. This operation includes reading a sensitive file, indicating a potential attack.",
+        "d": "Incorrect. The command is syntactically correct but malicious."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
