@@ -1,7 +1,6 @@
 {
   "version": 2.0,
   "questions": [
-   
     {
       "question": "What is OS command injection?",
       "answers": {
@@ -52,6 +51,57 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which function is considered unsafe when executing shell commands in Python?",
+      "answers": {
+        "a": "subprocess.run() with shell=False",
+        "b": "os.system()",
+        "c": "shutil.copy()",
+        "d": "open()"
+      },
+      "explanations": {
+        "a": "Incorrect. subprocess.run() with shell=False is safer.",
+        "b": "Correct! os.system() is unsafe as it allows direct shell execution of commands.",
+        "c": "Incorrect. shutil.copy() is used for file operations, not command execution.",
+        "d": "Incorrect. open() is used for file handling, not executing shell commands."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is one common goal of an OS command injection attack?",
+      "answers": {
+        "a": "To speed up system processes",
+        "b": "To execute arbitrary commands on the system",
+        "c": "To improve database queries",
+        "d": "To optimize network performance"
+      },
+      "explanations": {
+        "a": "Incorrect. OS command injection does not improve performance.",
+        "b": "Correct! The goal is to execute unauthorized commands.",
+        "c": "Incorrect. This vulnerability is unrelated to databases.",
+        "d": "Incorrect. Network performance is not the target of OS command injection."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which is an example of a safe way to execute commands in a web application?",
+      "answers": {
+        "a": "Sanitizing user input and using parameterized functions",
+        "b": "Allowing user input directly in shell commands",
+        "c": "Running commands as an admin user",
+        "d": "Disabling all security checks"
+      },
+      "explanations": {
+        "a": "Correct! Input sanitization and parameterized functions prevent injection attacks.",
+        "b": "Incorrect. Direct user input can lead to vulnerabilities.",
+        "c": "Incorrect. Running as an admin increases risk.",
+        "d": "Incorrect. Disabling security checks makes the system vulnerable."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }

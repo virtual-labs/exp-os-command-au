@@ -51,6 +51,57 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is a secure alternative to executing system commands in an application?",
+      "answers": {
+        "a": "Using parameterized system calls",
+        "b": "Allowing user input directly in shell commands",
+        "c": "Running commands as the root user",
+        "d": "Disabling all input validation"
+      },
+      "explanations": {
+        "a": "Correct! Parameterized system calls prevent direct command execution vulnerabilities.",
+        "b": "Incorrect. Allowing direct user input in shell commands increases security risks.",
+        "c": "Incorrect. Running commands as root increases the impact of an attack.",
+        "d": "Incorrect. Disabling input validation makes the system vulnerable."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following is a real-world example of an OS command injection attack?",
+      "answers": {
+        "a": "SQL injection in a database",
+        "b": "User entering `; rm -rf /` in an input field",
+        "c": "Cross-site scripting (XSS) attack",
+        "d": "Denial-of-Service (DoS) attack"
+      },
+      "explanations": {
+        "a": "Incorrect. SQL injection targets databases, not OS commands.",
+        "b": "Correct! This is an example of an OS command injection attack that deletes files.",
+        "c": "Incorrect. XSS is used to inject scripts into web pages, not execute OS commands.",
+        "d": "Incorrect. DoS attacks focus on overwhelming a system, not executing commands."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of these techniques helps detect OS command injection vulnerabilities in a web application?",
+      "answers": {
+        "a": "Static code analysis",
+        "b": "Increasing server memory",
+        "c": "Using a content delivery network (CDN)",
+        "d": "Minimizing database queries"
+      },
+      "explanations": {
+        "a": "Correct! Static code analysis can identify security vulnerabilities in source code.",
+        "b": "Incorrect. Increasing memory does not prevent security vulnerabilities.",
+        "c": "Incorrect. CDNs optimize content delivery but do not detect command injection.",
+        "d": "Incorrect. Reducing database queries is unrelated to OS command injection detection."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }
