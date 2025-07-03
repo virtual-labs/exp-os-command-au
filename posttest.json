@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is OS command injection?",
+      "answers": {
+        "a": "A way to speed up command execution",
+        "b": "A vulnerability allowing execution of arbitrary commands",
+        "c": "A method for improving system performance",
+        "d": "A technique for optimizing queries"
+      },
+      "explanations": {
+        "a": "Incorrect. OS command injection is a security vulnerability.",
+        "b": "Correct! OS command injection allows attackers to execute arbitrary commands.",
+        "c": "Incorrect. OS command injection is unrelated to system performance.",
+        "d": "Incorrect. OS command injection is not about optimizing queries."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following can help mitigate OS command injection?",
+      "answers": {
+        "a": "Running commands with root privileges",
+        "b": "Using parameterized commands",
+        "c": "Avoiding input validation",
+        "d": "Directly incorporating user input in commands"
+      },
+      "explanations": {
+        "a": "Incorrect. Running commands with root privileges can exacerbate the problem.",
+        "b": "Correct! Using parameterized commands helps separate data from command logic.",
+        "c": "Incorrect. Input validation is crucial to mitigate injection vulnerabilities.",
+        "d": "Incorrect. Directly incorporating user input in commands can lead to injection vulnerabilities."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the following user input indicate: 'file.txt && cat /etc/passwd'?",
+      "answers": {
+        "a": "An attempt to view a file and list its contents",
+        "b": "An attempt to execute multiple commands",
+        "c": "A benign file reading operation",
+        "d": "A syntax error in the command"
+      },
+      "explanations": {
+        "a": "Incorrect. This input attempts to list contents and read a sensitive file.",
+        "b": "Correct! This input is attempting to execute multiple commands.",
+        "c": "Incorrect. This operation includes reading a sensitive file, indicating a potential attack.",
+        "d": "Incorrect. The command is syntactically correct but malicious."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which function is considered unsafe when executing shell commands in Python?",
+      "answers": {
+        "a": "subprocess.run() with shell=False",
+        "b": "os.system()",
+        "c": "shutil.copy()",
+        "d": "open()"
+      },
+      "explanations": {
+        "a": "Incorrect. subprocess.run() with shell=False is safer.",
+        "b": "Correct! os.system() is unsafe as it allows direct shell execution of commands.",
+        "c": "Incorrect. shutil.copy() is used for file operations, not command execution.",
+        "d": "Incorrect. open() is used for file handling, not executing shell commands."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is one common goal of an OS command injection attack?",
+      "answers": {
+        "a": "To speed up system processes",
+        "b": "To execute arbitrary commands on the system",
+        "c": "To improve database queries",
+        "d": "To optimize network performance"
+      },
+      "explanations": {
+        "a": "Incorrect. OS command injection does not improve performance.",
+        "b": "Correct! The goal is to execute unauthorized commands.",
+        "c": "Incorrect. This vulnerability is unrelated to databases.",
+        "d": "Incorrect. Network performance is not the target of OS command injection."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which is an example of a safe way to execute commands in a web application?",
+      "answers": {
+        "a": "Sanitizing user input and using parameterized functions",
+        "b": "Allowing user input directly in shell commands",
+        "c": "Running commands as an admin user",
+        "d": "Disabling all security checks"
+      },
+      "explanations": {
+        "a": "Correct! Input sanitization and parameterized functions prevent injection attacks.",
+        "b": "Incorrect. Direct user input can lead to vulnerabilities.",
+        "c": "Incorrect. Running as an admin increases risk.",
+        "d": "Incorrect. Disabling security checks makes the system vulnerable."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}
