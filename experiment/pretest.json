@@ -53,55 +53,56 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following is a secure alternative to executing system commands in an application?",
+      "question": "What is the primary reason OS command injection is dangerous?",
       "answers": {
-        "a": "Using parameterized system calls",
-        "b": "Allowing user input directly in shell commands",
-        "c": "Running commands as the root user",
-        "d": "Disabling all input validation"
+        "a": "It makes the system slower",
+        "b": "It can give attackers full system control",
+        "c": "It reduces storage capacity",
+        "d": "It prevents updates"
       },
       "explanations": {
-        "a": "Correct! Parameterized system calls prevent direct command execution vulnerabilities.",
-        "b": "Incorrect. Allowing direct user input in shell commands increases security risks.",
-        "c": "Incorrect. Running commands as root increases the impact of an attack.",
-        "d": "Incorrect. Disabling input validation makes the system vulnerable."
-      },
-      "correctAnswer": "a",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "Which of the following is a real-world example of an OS command injection attack?",
-      "answers": {
-        "a": "SQL injection in a database",
-        "b": "User entering `; rm -rf /` in an input field",
-        "c": "Cross-site scripting (XSS) attack",
-        "d": "Denial-of-Service (DoS) attack"
-      },
-      "explanations": {
-        "a": "Incorrect. SQL injection targets databases, not OS commands.",
-        "b": "Correct! This is an example of an OS command injection attack that deletes files.",
-        "c": "Incorrect. XSS is used to inject scripts into web pages, not execute OS commands.",
-        "d": "Incorrect. DoS attacks focus on overwhelming a system, not executing commands."
+        "a": "Incorrect. Speed is not the main concern.",
+        "b": "Correct! Attackers can gain full system control via command injection.",
+        "c": "Incorrect. It does not reduce storage.",
+        "d": "Incorrect. It is unrelated to system updates."
       },
       "correctAnswer": "b",
-      "difficulty": "intermediate"
+      "difficulty": "beginner"
     },
     {
-      "question": "Which of these techniques helps detect OS command injection vulnerabilities in a web application?",
+      "question": "Which tool is commonly used to detect OS command injection vulnerabilities?",
       "answers": {
-        "a": "Static code analysis",
-        "b": "Increasing server memory",
-        "c": "Using a content delivery network (CDN)",
-        "d": "Minimizing database queries"
+        "a": "Wireshark",
+        "b": "sqlmap",
+        "c": "Nikto",
+        "d": "Burp Suite"
       },
       "explanations": {
-        "a": "Correct! Static code analysis can identify security vulnerabilities in source code.",
-        "b": "Incorrect. Increasing memory does not prevent security vulnerabilities.",
-        "c": "Incorrect. CDNs optimize content delivery but do not detect command injection.",
-        "d": "Incorrect. Reducing database queries is unrelated to OS command injection detection."
+        "a": "Incorrect. Wireshark is mainly used for network traffic analysis.",
+        "b": "Incorrect. sqlmap is focused on SQL injection, not OS command injection.",
+        "c": "Incorrect. Nikto scans web servers but not specifically for OS command injection.",
+        "d": "Correct! Burp Suite can detect OS command injection vulnerabilities during security testing."
       },
-      "correctAnswer": "a",
-      "difficulty": "intermediate"
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "In modern secure development, what is the best strategy to handle system commands safely?",
+      "answers": {
+        "a": "Use direct string concatenation with user input",
+        "b": "Restrict execution to pre-defined safe commands",
+        "c": "Run commands with maximum system privileges",
+        "d": "Avoid logging user activity"
+      },
+      "explanations": {
+        "a": "Incorrect. String concatenation with user input is unsafe.",
+        "b": "Correct! Whitelisting safe commands reduces OS command injection risk.",
+        "c": "Incorrect. Running with maximum privileges increases the impact of exploits.",
+        "d": "Incorrect. Logging is unrelated to command injection prevention."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
-  ]
+  ],
+  "reviewNote": "Some of the questions in this section do not have a reference in the theory provided."
 }
