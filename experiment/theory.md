@@ -1,4 +1,4 @@
-### Theory
+
 
 OS Command Injection is a vulnerability that occurs when an application improperly processes user input, allowing an attacker to execute arbitrary system commands. This happens when user input is passed directly into system commands without proper validation or sanitization, potentially enabling unauthorized access to files, system configurations, and sensitive data.
 
