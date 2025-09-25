@@ -2,38 +2,106 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is OS command injection?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A way to speed up command execution",
+        "b": "A vulnerability allowing execution of arbitrary commands",
+        "c": "A method for improving system performance",
+        "d": "A technique for optimizing queries"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. OS command injection is a security vulnerability.",
+        "b": "Correct! OS command injection allows attackers to execute arbitrary commands.",
+        "c": "Incorrect. OS command injection is unrelated to system performance.",
+        "d": "Incorrect. OS command injection is not about optimizing queries."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following can help mitigate OS command injection?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Running commands with root privileges",
+        "b": "Using parameterized commands",
+        "c": "Avoiding input validation",
+        "d": "Directly incorporating user input in commands"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Running commands with root privileges can exacerbate the problem.",
+        "b": "Correct! Using parameterized commands helps separate data from command logic.",
+        "c": "Incorrect. Input validation is crucial to mitigate injection vulnerabilities.",
+        "d": "Incorrect. Directly incorporating user input in commands can lead to injection vulnerabilities."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What does the following user input indicate: 'file.txt && cat /etc/passwd'?",
+      "answers": {
+        "a": "An attempt to view a file and list its contents",
+        "b": "An attempt to execute multiple commands",
+        "c": "A benign file reading operation",
+        "d": "A syntax error in the command"
+      },
+      "explanations": {
+        "a": "Incorrect. This input attempts to list contents and read a sensitive file.",
+        "b": "Correct! This input is attempting to execute multiple commands.",
+        "c": "Incorrect. This operation includes reading a sensitive file, indicating a potential attack.",
+        "d": "Incorrect. The command is syntactically correct but malicious."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is input validation important to prevent OS command injection?",
+      "answers": {
+        "a": "It allows users to input any command freely",
+        "b": "It ensures only safe and expected inputs are processed",
+        "c": "It speeds up the execution of commands",
+        "d": "It automatically fixes code vulnerabilities"
+      },
+      "explanations": {
+        "a": "Incorrect. Allowing arbitrary input increases vulnerability.",
+        "b": "Correct! Input validation helps ensure only safe and expected inputs are processed.",
+        "c": "Incorrect. Input validation does not improve command speed.",
+        "d": "Incorrect. Input validation does not automatically fix vulnerabilities."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Advanced: How can OS command injection be exploited even when user input is partially sanitized?",
+      "answers": {
+        "a": "Through command chaining or using alternate encodings",
+        "b": "By only executing safe commands",
+        "c": "By running the program offline",
+        "d": "By removing input validation entirely"
+      },
+      "explanations": {
+        "a": "Correct! Attackers can bypass partial sanitization using command chaining, encoding tricks, or shell metacharacters.",
+        "b": "Incorrect. Safe commands do not exploit vulnerabilities.",
+        "c": "Incorrect. Offline execution does not relate to exploiting injection.",
+        "d": "Incorrect. Removing validation makes it easier, but partial bypass can occur even with some validation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Advanced: Which is the most secure approach to prevent OS command injection in web applications?",
+      "answers": {
+        "a": "Use parameterized commands and avoid dynamic command construction",
+        "b": "Allow user input but escape special characters",
+        "c": "Run all commands as root to catch errors quickly",
+        "d": "Validate input occasionally"
+      },
+      "explanations": {
+        "a": "Correct! Parameterized commands and avoiding dynamic concatenation are considered best practices.",
+        "b": "Incorrect. Escaping alone may not prevent all injection vectors.",
+        "c": "Incorrect. Running as root increases risk.",
+        "d": "Incorrect. Occasional validation is insufficient for security."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }
