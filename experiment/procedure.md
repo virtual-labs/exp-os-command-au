@@ -1,4 +1,4 @@
-### Procedure
+
 <p>Step 1: Observe the instruction given in the simulation and click the arrow to move to the next step.</p>
 <img src="./images/os1.png" width="50%">
 <p>Step 2: Read the instruction. Here we are entering an IP address to check the device is Up or Down. Select any of the IP address and click the submit button.</p>

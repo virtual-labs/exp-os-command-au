@@ -1,4 +1,4 @@
-### References
+
 
 1. J. Ye, "Detecting command injection vulnerabilities in Linux-based embedded firmware," *Computers & Security*, vol. 146, 2024. [Available online](https://www.sciencedirect.com/science/article/abs/pii/S0167404824002761)
 
